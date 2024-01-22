@@ -1,0 +1,2 @@
+PS C:\Users\Rakshitha\PSC\C_activity_sets\set01> .\a.exe
+rakshitha
