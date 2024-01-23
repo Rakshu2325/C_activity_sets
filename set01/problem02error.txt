@@ -1,0 +1,4 @@
+PS C:\Users\Rakshitha\PSC\C_activity_sets> gcc "C:\Users\Rakshitha\PSC\C_activity_sets\set01\problem02.c"
+PS C:\Users\Rakshitha\PSC\C_activity_sets> .\a.exe  
+Enter a: 4
+Enter b: 6
