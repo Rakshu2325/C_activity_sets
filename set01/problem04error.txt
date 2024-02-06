@@ -1,0 +1,7 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC> cd C_activity_sets
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets> cd set01
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> gcc C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> .\a.exe
+Enter two numbers: 4
+5
+The sum of 4 and 5 is 9
