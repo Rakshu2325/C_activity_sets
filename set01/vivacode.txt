@@ -1,0 +1,40 @@
+//what is #
+# is a symble which indicates the line to be processed by preprocessor.
+
+//what is preprocessor?
+preprocessor of gcc will process the lines starting with #. 
+
+//what is a compiler?
+c with # to c without # lines preprocess is a part of gcc (complies).
+
+
+//what is preprocessor directive?
+
+
+//what is stdio?
+is a header file containg function proto types.
+
+//what is a fuction prototype?
+contains of  fuction names , list of arguments , return type.
+
+// what is the use of function prototype ?
+right type of p , returns value is asigned to right type of variable .
+
+//what is int main() main is a function 
+{                    main return_n an integer
+                     main is the starting point of a program.
+}
+// what is 
+int main()
+{
+ printf("rakshitha \n")
+escape charecter.
+ }
+// what is printf?
+printf is standared library function use to print a starting on the console , terminal, screen , std out.
+
+//waht is meaning of \ n in font string ?
+
+
+// what does return statement do ?
+transfers control from called function to calling function and optionally returns a value 
