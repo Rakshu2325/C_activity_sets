@@ -1,0 +1,47 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c, line 10.
+(gdb) r
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01/a.exe
+[New Thread 9380.0xadc]
+[New Thread 9380.0x438c]
+
+Breakpoint 1, main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c:10
+10          input(&a, &b);
+(gdb) s
+input (a=0x61ff1c, b=0x61ff18) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c:23
+23          printf("Enter two numbers: ");
+(gdb) s
+Enter two numbers: 24       scanf("%d %d", a, b);
+(gdb) s
+s
+25      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c:13
+13          add(a, b, &sum);
+(gdb) s
+add (a=2400256, b=0, sum=0x61ff14) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c:28
+28          *sum = a + b;
+(gdb) s
+29      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c:16
+16          output(a, b, sum);
+(gdb) s
+output (a=2400256, b=0, sum=2400256) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c:33
+33          printf("The sum of %d and %d is %d\n", a, b, sum);
+(gdb) s
+The sum of 2400256 and 0 is 2400256
+34      }(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem04.c:18
+18          return 0;
+(gdb) s
+19      }
+(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 9380] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
