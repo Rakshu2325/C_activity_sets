@@ -1,0 +1,7 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC> cd C_activity_sets 
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets> cd set01
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> gcc C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem09.c
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> .\a.exe
+enter the number
+4
+the squareroot of 4.000000  is  2.000000
