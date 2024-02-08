@@ -1,0 +1,62 @@
+(gdb) b main
+Breakpoint 1 at 0x4014d8: file C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c, line 23.
+(gdb) r
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01/a.exe 
+[New Thread 3116.0x514c]
+[New Thread 3116.0x2468]
+
+Breakpoint 1, main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:23
+23          a=input();
+(gdb) s
+input () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:6
+6           printf("Enter the value: ");
+(gdb) s
+Enter the value: 7          scanf("%d",&n);
+(gdb) s
+s
+8           return n;
+(gdb) s
+9       }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:24
+24          b=input();
+(gdb) s
+input () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:6
+6           printf("Enter the value: ");
+(gdb) s
+Enter the value: 7          scanf("%d",&n);
+(gdb) s
+8           return n;
+(gdb) s
+9       }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:25
+25          sum=add(a,b);
+(gdb) s
+add (a=6422476, b=6422476) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:13
+13          sum=a+b;
+(gdb) s
+14          return sum;
+(gdb) s
+15      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:26
+26          output(a,b,sum);
+(gdb) s
+output (a=6422476, b=6422476, sum=12844952) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:18
+18          printf("%d + %d = %d",a,b,sum);
+(gdb) s
+6422476 + 6422476 = 1284495219  }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem03.c:27
+27          return 0;
+(gdb) s
+28      }(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 3116] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
