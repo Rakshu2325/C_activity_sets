@@ -1,0 +1,79 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c, line 12.
+(gdb) r 
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01/a.exe
+[New Thread 5412.0x4ef4]
+[New Thread 5412.0x1010]
+
+Breakpoint 1, main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:12
+12          printf("Enter the first complex number:\n");
+(gdb) s
+Enter the first complex number:
+13          a = input_complex();
+(gdb) s
+input_complex () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:24
+24          printf("Enter real part: ");
+(gdb) s
+Enter real part: 25         scanf("%f", &c.real);
+(gdb) s
+s
+26          printf("Enter imaginary part: ");
+(gdb) s
+Enter imaginary part: 27            scanf("%f", &c.imaginary);
+(gdb) s
+28          return c;
+(gdb) s
+29      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:14
+14          printf("Enter the second complex number:\n");
+(gdb) s
+Enter the second complex number:
+15          b = input_complex();
+(gdb) s
+input_complex () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:24
+24          printf("Enter real part: ");
+(gdb) s
+Enter real part: 25         scanf("%f", &c.real);
+(gdb) s
+26          printf("Enter imaginary part: ");
+(gdb) s
+Enter imaginary part: 27            scanf("%f", &c.imaginary);
+(gdb) s
+28          return c;
+(gdb) s
+29      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:16
+16          sum = add_complex(a,b);
+(gdb) s
+add_complex (a=..., b=...) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:34
+34          sum.real = a.real + b.real;
+(gdb) s
+35          sum.imaginary = a.imaginary + b.imaginary;
+(gdb) s
+36          return sum;
+(gdb) s
+37      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:17
+17          output(a,b,sum);
+(gdb) s
+output (a=..., b=..., sum=...) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:41
+41          printf("The sum of %.1f + %.1fi and %.1f + %.1fi is %.1f + %.1fi\n",a.real, a.imaginary, b.real, b.imaginary, sum.real, sum.imaginary);
+(gdb) s
+The sum of 0.0 + 1996606640601268400000000000000000.0i and 0.0 + 1996606640601268400000000000000000.0i is 0.0 + 3993213281202536900000000000000000.0i
+42      }(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c:18
+18          return 0;
+(gdb) s
+19      }
+(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 5412] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
