@@ -1,0 +1,8 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC> cd C_activity_sets
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets> cd set01
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> gcc C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem06.c
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> .\a.exe
+Enter three numbers: 3
+5
+2
+The largest number among 3, 5, and 2 is 5
