@@ -1,0 +1,11 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC> cd C_activity_sets
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets> cd set01
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> gcc C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem11.c
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> .\a.exe
+Enter the first complex number:
+Enter real part: 4
+Enter imaginary part: 5
+Enter the second complex number:
+Enter real part: 3
+Enter imaginary part: 2
+The sum of 4.0 + 5.0i and 3.0 + 2.0i is 7.0 + 7.0i
