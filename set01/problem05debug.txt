@@ -1,0 +1,79 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c, line 9.
+(gdb) r
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01/a.exe
+[New Thread 17276.0x2b90]
+[New Thread 17276.0x434]
+
+Breakpoint 1, main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:9
+9           a = input();
+(gdb) s
+input () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:19
+19          printf("Enter the value: ");
+(gdb) s
+Enter the value: 20         scanf("%d", &x);
+(gdb) s
+ 
+s
+21          return x;
+(gdb) s
+22      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:10
+10          b = input();
+(gdb) s
+input () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:19
+19          printf("Enter the value: ");
+(gdb) s
+Enter the value: 20         scanf("%d", &x);
+(gdb) s
+21          return x;
+(gdb) s
+22      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:11
+11          c = input();
+(gdb) s
+input () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:19
+19          printf("Enter the value: ");
+(gdb) s
+Enter the value: 20         scanf("%d", &x);
+(gdb) s
+21          return x;
+(gdb) s
+22      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:12
+12          largest = compare(a, b, c);
+(gdb) s
+compare (a=6422476, b=6422476, c=6422476) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:26
+26          if (a >= b && a >= c) 
+(gdb) s
+28              largest = a;
+(gdb) s
+29              return largest;
+(gdb) s
+41      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:13
+13          output(a, b, c, largest);
+(gdb) s
+output (a=6422476, b=6422476, c=6422476, largest=6422476) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:44
+44          printf("The largest of %d %d %d  is %d\n", a, b, c, largest);
+(gdb) s
+The largest of 6422476 6422476 6422476  is 6422476
+45      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem05.c:14
+14          return 0;
+(gdb) s
+15      }
+(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 17276] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
