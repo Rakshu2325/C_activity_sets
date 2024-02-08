@@ -1,0 +1,94 @@
+(gdb) b main
+Breakpoint 1 at 0x401477: file C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c, line 7.
+(gdb) r 
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01/a.exe
+[New Thread 3144.0x4e18]
+[New Thread 3144.0x21b4]
+
+Breakpoint 1, 0x00401477 in main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:7
+7       int main() {
+(gdb) s
+9           n = input_array_size();
+(gdb) s
+input_array_size () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:21
+21          printf("Input array size: ");
+(gdb) s
+Input array size: 22        scanf("%d", &n);
+(gdb) s
+s
+23          return n;
+(gdb) s
+24      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:10
+10          int a[n];
+(gdb) s
+__chkstk_ms () at ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:163
+163     ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S: No such file or directory.
+(gdb) s
+165     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+167     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+168     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+169     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+177     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+178     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+180     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+182     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+184     in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:11
+11          input_array(n, a);
+(gdb) s
+input_array (n=0, a=0x61feec) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:29
+29          printf("Input the array:\n");        
+(gdb) s
+Input the array:
+30          for (int i = 0; i < n; i++)
+(gdb) s
+34      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:12
+12          sum = sum_n_array(n, a); 
+(gdb) s
+sum_n_array (n=0, a=0x61feec) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:39
+39          int sum = 0;
+(gdb) s
+40          for (int i = 0; i < n; i++)
+(gdb) s
+44          return sum;
+(gdb) s
+45      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:13
+13          output(n, a, sum);
+(gdb) s
+output (n=0, a=0x61feec, sum=0) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:50
+50          printf("Sum of ");
+(gdb) s
+Sum of 51           for (int i = 0; i < n; i++)
+(gdb) s
+59          printf(" is %d\n", sum);
+(gdb) s
+ is 0
+60      }(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem08.c:14
+14          return 0;
+(gdb) s
+15      }
+(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 3144] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
