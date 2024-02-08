@@ -1,0 +1,10 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC> cd C_activity_sets
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets> cd set01
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> gcc C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> .\a.exe
+Enter the first string
+4
+Enter the second string
+6
+result is 2
+6 is greater than 4
