@@ -1,0 +1,66 @@
+(gdb) b main
+Breakpoint 1 at 0x401471: file C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c, line 13.
+(gdb) r
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01/a.exe
+[New Thread 11408.0x4cd8]
+[New Thread 11408.0x4ef4]
+
+Breakpoint 1, main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c:13
+13          input_two_strings(string1, string2);
+(gdb) s
+input_two_strings (string1=0x61feb8 "\034"Evü_a", string2=0x61fe54 "^I\005o"_a")
+    at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c:26
+26        printf("Enter the first string\n");
+(gdb) s
+Enter the first string
+27        scanf("%s[^\n]", string1);
+(gdb) s
+s
+28        printf("Enter the second string\n");
+(gdb) s
+Enter the second string
+29        scanf("%s[^\n]", string2);
+(gdb) s
+s
+30      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c:14
+14          result=stringcompare(string1, string2);
+(gdb) s
+stringcompare (string1=0x61feb8 "s", string2=0x61fe54 "s") at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c:35        
+35        int i=0;
+(gdb) s
+36        for(i=0;string1[i]!='\0' && string2[i]!='\0' && string1[i]==string2[i];i++);
+(gdb) s
+38        if(string1[i]==string2[i])
+(gdb) s
+39          return 0;
+(gdb) s
+43      }
+(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c:15
+15          printf("result is %d\n", result);
+(gdb) s
+result is 0
+16          output(string1, string2, result);
+(gdb) s
+output (string1=0x61feb8 "s", string2=0x61fe54 "s", result=0) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c:47     
+47        if(result==0)
+(gdb) s
+48          printf("%s is equal to %s\n", string1, string2);
+(gdb) s
+s is equal to s
+53      }(gdb) s
+main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01\problem10.c:17
+17          return 0;
+(gdb) s
+19      }
+(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 11408] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
