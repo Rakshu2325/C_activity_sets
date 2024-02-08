@@ -1,0 +1,8 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC> cd C_activity_sets
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets> cd set01
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> git add .
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set01> git commit -m 'test'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
