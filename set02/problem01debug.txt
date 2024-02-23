@@ -1,5 +1,5 @@
-S C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gcc "C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c" -O0 -g
-PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gdb a.exe 
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gcc -g -O0 problem01.c -o problem01.exe
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gdb .\problem01.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -9,50 +9,13 @@ and "show warranty" for details.
 This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\a.exe...done.
-(gdb) b main
-Breakpoint 1 at 0x40146e: file C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c, line 10.
+Reading symbols from C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.exe...done.
 (gdb) r
-Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02/a.exe 
-[New Thread 22960.0x279c]
-[New Thread 22960.0x6b64]
-
-Breakpoint 1, main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c:10
-10          input(&base, &height);
-(gdb) s
-input (base=0x61ff1c, height=0x61ff18) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c:18
-18          printf("Enter the base of the triangle: ");
-(gdb) s
-Enter the base of the triangle: 19          scanf("%f", base);
-(gdb) s
-s
-21          printf("Enter the height of the triangle: ");
-(gdb) s
-Enter the height of the triangle: 22        scanf("%f", height);
-(gdb) s
-23      }
-(gdb) s
-main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c:11
-11          find_area(base, height, &area);
-(gdb) s
-find_area (base=4.31626832e-039, height=0, area=0x61ff14)
-    at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c:26
-26          *area = 0.5 * base * height;
-(gdb) s
-27      }
-(gdb) s
-main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c:12
-12          output(base, height, area);
-(gdb) s
-output (base=4.31626832e-039, height=0, area=0) at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c:30
-30          printf("The area of the triangle with base %.6f and height %.6f is %.6f\n", base, height, area);
-(gdb) s
-The area of the triangle with base 0.000000 and height 0.000000 is 0.000000
-31      }(gdb) s
-main () at C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem01.c:14
-14          return 0;
-(gdb) s
-15      }
-(gdb) s
-0x00401288 in __register_frame_info ()
-(gdb) q
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02/.\problem01.exe
+[New Thread 25276.0x2ee8]
+[New Thread 25276.0x4c64]
+Enter the base of the triangle: 1
+Enter the height of the triangle: 2
+The area of the triangle with base 1.000000 and height 2.000000 is 1.000000
+[Inferior 1 (process 25276) exited normally]
+(gdb)
