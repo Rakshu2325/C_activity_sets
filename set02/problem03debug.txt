@@ -1,6 +1,13 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> git add .
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> git commit -m 'test'
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gcc -g -O0 problem03.c -o problem03.exe
 PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gdb .\problem03.exe
-GNU gdb (GDB) 7.6.1                                                                                                                                 
+GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
@@ -11,21 +18,21 @@ For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>...
 Reading symbols from C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem03.exe...done.
 (gdb) r
-Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02/.\problem03.exe 
-[New Thread 3584.0x60e4]
-[New Thread 3584.0x4194]
-Enter a number: 3
-3 is not a composite number.
-[Inferior 1 (process 3584) exited normally]
-(gdb) 6
-Undefined command: "6".  Try "help".
-(gdb) 7
-Undefined command: "7".  Try "help".
-(gdb) 8
-Undefined command: "8".  Try "help".
-(gdb) r
-Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02/.\problem03.exe 
-[New Thread 22632.0x4060]
-[New Thread 22632.0x1fa8]
-Enter a number: 8
-8 is a composite number.
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02/.\problem03.exe
+[New Thread 20908.0x3b74]
+[New Thread 20908.0x380c]
+Enter a number: 4
+4 is a composite number.
+[Inferior 1 (process 20908) exited normally]
+(gdb) quit
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> git push
+Enumerating objects: 19, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 2.47 KiB | 361.00 KiB/s, done.
+Total 15 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+To https://github.com/Rakshu2325/C_activity_sets
+   e906749..118bd63  main -> main
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> 
