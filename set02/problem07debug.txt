@@ -1,0 +1,22 @@
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gcc -g -O0 problem07.c -o problem07.c  
+gcc.exe: fatal error: input file 'problem07.c' is the same as output file
+compilation terminated.
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gcc -g -O0 problem07.c -o problem07.exe
+PS C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02> gdb .\problem07.exe                    
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02\problem07.exe...done.
+(gdb) r
+Starting program: C:\Users\Rakshitha\OneDrive\Documents\PSC\C_activity_sets\set02/.\problem07.exe
+[New Thread 10660.0x397c]
+[New Thread 10660.0x34cc]
+Enter the base and altitude of the triangle: 2
+3
+The area of triangle with base = 2.000000 and altitude = 3.000000 is 3.000000
