@@ -3,6 +3,7 @@
 
 int main()
 {
-    printf("rakshitha");
+    printf("rakshitha/n");
     return 0;
 }
+
